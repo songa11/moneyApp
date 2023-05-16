@@ -1,0 +1,131 @@
+<!DOCTYPE html >
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+<!--  <style>-->
+<!--    /* Global Styles */-->
+<!--* {-->
+<!--    box-sizing: border-box;-->
+<!--}-->
+
+<!--body {-->
+<!--    margin: 0;-->
+<!--    padding: 0;-->
+<!--    font-family: 'Segoe UI', sans-serif;-->
+<!--}-->
+
+<!--/* Header Styles */-->
+<!--header {-->
+<!--    background-color: #333;-->
+<!--    color: #fff;-->
+<!--    padding: 20px;-->
+<!--}-->
+
+<!--nav ul {-->
+<!--    margin: 0;-->
+<!--    padding: 0;-->
+<!--    list-style: none;-->
+<!--    display: flex;-->
+<!--    justify-content: flex-end;-->
+<!--}-->
+
+<!--nav ul li {-->
+<!--    margin-left: 20px;-->
+<!--}-->
+
+<!--nav ul li a {-->
+<!--    color: #fff;-->
+<!--    text-decoration: none;-->
+<!--    font-weight: bold;-->
+<!--}-->
+
+<!--/* Hero Section Styles */-->
+<!--.hero {-->
+<!--    background-color: #007bff;-->
+<!--    color: #fff;-->
+<!--    padding: 100px 20px;-->
+<!--    text-align: center;-->
+<!--}-->
+
+<!--.hero h1 {-->
+<!--    font-size: 3rem;-->
+<!--    margin-bottom: 30px;-->
+<!--}-->
+
+<!--.hero p {-->
+<!--    font-size: 1.2rem;-->
+<!--    line-height: 1.5;-->
+<!--    margin-bottom: 30px;-->
+<!--}-->
+
+<!--.cta-btn {-->
+<!--    display: inline-block;-->
+<!--    background-color: #fff;-->
+<!--    color: #007bff;-->
+<!--    padding: 10px 20px;-->
+<!--    border-radius: 25px;-->
+<!--    text-decoration: none;-->
+<!--    font-weight: bold;-->
+<!--}-->
+
+
+<!--  </style>-->
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" th:href="@{/css/Home.css}" />
+  <title>Home Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+<!--      <li><a href="#">Contact</a></li>-->
+      <li><a style="color: magenta" th:href="@{'/login'}">Login</a></li>
+      <li><a style="color: magenta" th:href="@{/signup}">SignUp</a></li>
+      <li><a style="color: magenta" href="#">Home</a></li>
+      <li><a style="color: magenta" href="#">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Welcome to the Student Pocket Money Management System!</h1>
+
+  </section>
+
+  <section class="features">
+    <center>
+    <div class="feature-item">
+      <i class="fas fa-laptop"></i>
+
+      <h3 style="color: yellow">Responsive</h3>
+      <h4 style="color: yellow">Efficiently manage and track your pocket money with our user-friendly platform designed specifically for students.</h4>
+        <h5 style="color: yellow"> Take control of your finances and develop healthy money habits that will last a lifetime.</h5>
+    </div>
+    <center>
+    <div class="feature-item">
+      <i class="fas fa-code"></i>
+<!--      <h3>Clean Code</h3>-->
+
+      <h4 style="color: yellow">Take charge of your finances and embark on a journey towards financial independence.</h4>
+        <h4 style="color: yellow"> Sign up now for the Student Pocket Money Management System and pave the way for a brighter financial future!</h4>
+    </div>
+      <center>
+    <div class="feature-item">
+      <i class="fas fa-clock"></i>
+<!--      <h3>Fast Loading</h3>-->
+<!--      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet urna sed odio tempus pellentesque.</p>-->
+
+
+    </div>
+    </center>
+    </center>
+    </center>
+  </section>
+</main>
+
+<footer>
+  <p style="color: magenta">&copy; 2023 Ishimwe Shemu. All rights reserved.</p>
+</footer>
+</body>
+</html>

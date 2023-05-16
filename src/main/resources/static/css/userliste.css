@@ -1,0 +1,120 @@
+body{
+     margin: 0;
+            padding: 0;
+            border: none;
+            font-family: Arial, sans-serif;
+            background-size: cover;
+           background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/amafoto5.jpg);
+
+    }
+        .col-5 {
+            margin: 0 auto;
+            margin-top: 50px;
+            max-width: 500px;
+
+
+
+        }
+
+        .container {
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            background-color: #fff;
+            color: black;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .card-body {
+            padding: 20px;
+
+        }
+
+        .form-control {
+            width: 100%;
+             font-family: inherit;
+               width: 100%;
+               height: 6px;
+               outline: none;
+               background-color: #fff;
+               border-radius: 4px;
+               border: none;
+               display: block;
+               padding: 0.9rem 0.7rem;
+               box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+               font-size: 17px;
+               color: #4A4A4A;
+               text-indent: 40px;
+      }
+
+        .btn {
+            margin-top: 10px;
+        }
+
+        .card-footer {
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .text-info {
+            color: #17a2b8;
+        }
+
+        label {
+<!--            font-weight: bold;-->
+        font-size: 16px;
+        }
+         a.form-field {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: #fff;
+      text-decoration: none;
+      margin-top: 10px;
+      margin-right: 10px;
+      border-radius: 4px;
+    }
+
+    a.form-field:hover {
+      background-color: #2980b9;
+    }
+    .btn {
+            display: block;
+            width: 40%;
+            padding: 10px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        /* Sign up button hover effect */
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Center the table */
+        .table-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }

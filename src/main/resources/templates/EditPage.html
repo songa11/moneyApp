@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<!--  <style>-->
+<!-- /* CSS Reset */-->
+<!--        body, h1, h2, h3, h4, h5, h6, p, form, input, button {-->
+<!--            margin: 0;-->
+<!--            padding: 0;-->
+<!--        }-->
+
+<!--        body {-->
+<!--            font-family: Arial, sans-serif;-->
+<!--            background-color: #f7f7f7;-->
+<!--&lt;!&ndash;            background-image: url('./image/voice.jpg');&ndash;&gt;-->
+<!--            background-size: cover;-->
+<!--            text-align: center;-->
+<!--            background-color: yellow;-->
+<!--            background-position: center-->
+<!--        }-->
+
+
+<!--        /* Form Wrapper */-->
+<!--        .wrapper-login {-->
+<!--            background-color: #FOOBC7;-->
+<!--            padding: 20px;-->
+<!--            border-radius: 10px;-->
+<!--            margin-left: 30px;-->
+<!--            margin-top: 90px;-->
+<!--            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);-->
+<!--            width: 400px;-->
+<!--        }-->
+
+<!--        /* Form Heading */-->
+<!--        .wrapper-login h2 {-->
+<!--            text-align: center;-->
+<!--            margin-bottom: 20px;-->
+<!--        }-->
+
+<!--/* Input box container */-->
+<!--        .input-box {-->
+<!--            position: relative;-->
+<!--            margin-bottom: 15px;-->
+<!--        }-->
+
+<!--        /* Input field */-->
+<!--        .input-box input {-->
+<!--            width: 100%;-->
+<!--            padding: 10px;-->
+<!--            font-size: 16px;-->
+<!--            border: 1px solid #ddd;-->
+<!--            border-radius: 5px;-->
+<!--        }-->
+
+<!--        /* Input field icon */-->
+<!--        .input-box .icon {-->
+<!--            position: absolute;-->
+<!--            top: 50%;-->
+<!--            left: 10px;-->
+<!--            transform: translateY(-50%);-->
+<!--            color: #777;-->
+<!--        }-->
+
+<!--        /* Input field label */-->
+<!--        .input-box label {-->
+<!--            position: absolute;-->
+<!--            top: 0;-->
+<!--            left: 10px;-->
+<!--            font-size: 12px;-->
+<!--            color: #777;-->
+<!--            transform: translateY(-50%);-->
+<!--            background-color: #f8f8f8;-->
+<!--            padding: 0 5px;-->
+<!--        }-->
+
+
+<!--        /* Form Button */-->
+<!--        .btn {-->
+<!--            display: block;-->
+<!--            width: 100%;-->
+<!--            padding: 12px;-->
+<!--            margin-top: 20px;-->
+<!--            background-color: #4286f4;-->
+<!--            color: #fff;-->
+<!--            font-size: 16px;-->
+<!--            text-align: center;-->
+<!--            cursor: pointer;-->
+<!--            border: none;-->
+<!--            outline: none;-->
+<!--            transition: all 0.3s ease-in-out;-->
+<!--        }-->
+
+<!--        .btn:hover {-->
+<!--            background-color: #3367d6;-->
+<!--        }-->
+
+<!--        /* Register Link */-->
+<!--         .register-link {-->
+<!--            text-align: center;-->
+<!--            margin-top: 15px;-->
+<!--        }-->
+
+<!--        /* Register link text */-->
+<!--        .register-link p {-->
+<!--            font-size: 14px;-->
+<!--            color: #777;-->
+<!--        }-->
+
+<!--        /* Register link anchor */-->
+<!--        .register-link a {-->
+<!--            color: #007bff;-->
+<!--            text-decoration: none;-->
+<!--        }-->
+
+<!--        /* Register link anchor hover effect */-->
+<!--        .register-link a:hover {-->
+<!--            text-decoration: underline;-->
+<!--        }-->
+
+
+<!--        /* Header */-->
+<!--        .header {-->
+<!--            background-color: #007bff;-->
+<!--            padding: 10px;-->
+<!--            color: #fff;-->
+<!--            display: flex;-->
+<!--            justify-content: space-between;-->
+<!--            height:40px;-->
+
+<!--        }-->
+
+<!--        .header h1 {-->
+<!--            font-size: 24px;-->
+<!--            margin: 0;-->
+<!--        }-->
+
+<!--        .nav a {-->
+<!--            color: #fff;-->
+<!--            text-decoration: none;-->
+<!--            margin-left: 10px;-->
+<!--        }-->
+
+
+<!--/* Footer */-->
+<!--footer {-->
+<!--    background-color: #007bff;-->
+<!--    padding: 10px;-->
+<!--    text-align: center;-->
+<!--    position: absolute;-->
+<!--    bottom: 0;-->
+<!--    width: 98%;-->
+<!--    height:20px;-->
+<!--}-->
+
+<!--footer p {-->
+<!--    margin: 0;-->
+<!--    color: #fff;-->
+<!--}-->
+
+<!--footer ul {-->
+<!--    list-style-type: none;-->
+<!--    padding: 0;-->
+<!--    margin-top: 10px;-->
+<!--}-->
+
+<!--footer ul li {-->
+<!--    display: inline-block;-->
+<!--    margin-right: 10px;-->
+<!--}-->
+
+<!--footer ul li a {-->
+<!--    color: #fff;-->
+<!--    text-decoration: none;-->
+<!--}-->
+
+<!--footer ul li a:hover {-->
+<!--    text-decoration: underline;-->
+<!--}-->
+
+<!--.container {-->
+<!--  display: flex;-->
+<!--  justify-content: center;<-->
+<!--  height: 3px;-->
+<!--  width:1300px;-->
+
+
+<!--}-->
+
+<!--.welcome-box {-->
+<!--  background-color: #f8f8f8;-->
+<!--  padding: 20px;-->
+<!--  border-radius: 8px;-->
+<!--  margin-left:70vh;-->
+<!--&lt;!&ndash;    margin-top: 40vh;&ndash;&gt;-->
+<!--  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);-->
+<!--}-->
+
+<!--.welcome-content {-->
+<!--  text-align: center;-->
+<!--}-->
+
+<!--.welcome-title {-->
+<!--  font-size: 24px;-->
+<!--  font-weight: bold;-->
+<!--  margin-bottom: 10px;-->
+<!--}-->
+
+<!--.welcome-description {-->
+<!--  font-size: 16px;-->
+<!--  color: #777;-->
+<!--}-->
+
+
+
+
+<!--    </style>-->
+
+  <title  style="color: magenta">UPDATE FORM</title>
+  <link rel="stylesheet" type="text/css" th:href="@{/css/Edit.css}" />
+</head>
+<body>
+<h1  style="color: magenta">UPDATE FORM</h1>
+<form method="post" th:action="@{/}" th:object="${user}">
+  <label   style="color: magenta" for="name">Name:</label>
+  <input type="hidden" th:field="*{id}">
+  <input
+          class="form-control"
+          th:field="*{name}"
+          placeholder="Name"
+          type="text" id="name" name="name" required><br><br>
+
+  <label  style="color: magenta" for="rname">Rname:</label>
+  <input
+          class="form-control"
+          th:field="*{rname}"
+          placeholder="Rname"
+          type="text" id="rname" name="rname" required><br><br>
+
+  <label  style="color: magenta" for="amount">Amount:</label>
+  <input
+          class="form-control"
+          th:field="*{amount}"
+          placeholder="amount"
+          type="number" id="amount" name="amount" required><br><br>
+
+  <input type="submit" value="UPDATE">
+
+</form>
+</body>
+</html>

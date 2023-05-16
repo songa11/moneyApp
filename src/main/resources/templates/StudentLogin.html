@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+<!--    <style>-->
+<!--		body {-->
+<!--			font-family: Arial, Helvetica, sans-serif;-->
+<!--			background-color: #f1f1f1;-->
+<!--		}-->
+
+<!--		.container {-->
+<!--			background-color: #fff;-->
+<!--			padding: 20px;-->
+<!--			border-radius: 10px;-->
+<!--			box-shadow: 0px 0px 10px #888;-->
+<!--			max-width: 500px;-->
+<!--			margin: auto;-->
+<!--			margin-top: 100px;-->
+<!--		}-->
+
+<!--		input[type=text], input[type=password] {-->
+<!--			width: 100%;-->
+<!--			padding: 12px 20px;-->
+<!--			margin: 8px 0;-->
+<!--			display: inline-block;-->
+<!--			border: 1px solid #ccc;-->
+<!--			border-radius: 4px;-->
+<!--			box-sizing: border-box;-->
+<!--		}-->
+
+<!--		button {-->
+<!--			background-color: #4CAF50;-->
+<!--			color: white;-->
+<!--			padding: 14px 20px;-->
+<!--			margin: 8px 0;-->
+<!--			border: none;-->
+<!--			border-radius: 4px;-->
+<!--			cursor: pointer;-->
+<!--			width: 100%;-->
+<!--		}-->
+
+<!--		button:hover {-->
+<!--			background-color: #45a049;-->
+<!--		}-->
+
+<!--		.cancelbtn {-->
+<!--			background-color: #f44336;-->
+<!--		}-->
+
+<!--		.imgcontainer {-->
+<!--			text-align: center;-->
+<!--			margin: 24px 0 12px 0;-->
+<!--			position: relative;-->
+<!--		}-->
+
+<!--		img.avatar {-->
+<!--			width: 40%;-->
+<!--			border-radius: 50%;-->
+<!--		}-->
+
+<!--		.container form {-->
+<!--			margin-top: 30px;-->
+<!--		}-->
+
+<!--		.container label {-->
+<!--			font-weight: bold;-->
+<!--			display: block;-->
+<!--			margin-bottom: 10px;-->
+<!--		}-->
+
+<!--		.container span.psw {-->
+<!--			float: right;-->
+<!--			padding-top: 16px;-->
+<!--		}-->
+<!--	</style>-->
+</head>
+<body>
+<h1 style="color: yellow">Signup Form</h1>
+<link rel="stylesheet" type="text/css" th:href="@{/css/signup.css}" />
+<form method="post" th:action="@{/}" th:object="${student}">
+    <label style="color: magenta" for="name">Name:</label>
+    <input
+            class="form-control"
+            th:field="*{name}"
+            placeholder="Name"
+            type="text" id="name" name="name" required><br><br>
+    <label style="color: magenta" for="email">Email:</label>
+    <input
+            class="form-control"
+            th:field="*{email}"
+            placeholder="Email"
+            type="text" id="email" name="email" required><br><br>
+
+    <label style="color: magenta" for="password">Password:</label>
+    <input
+            class="form-control"
+            th:field="*{password}"
+            placeholder="Password"
+            type="text" id="password" name="password" required><br><br>
+    <input type="hidden" value="USER" id="role" name="role"  th:fields="*{role}" />
+
+    <input type="submit" value="Submit">
+
+</form>
+</body>
+</html>
